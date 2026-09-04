@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Sonny Sayi Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="no-print controls">
+        <button id="downloadBtn" class="btn-primary">Download PDF</button>
+    </div>
+
+    <div class="invoice-container">
+        <!-- Watermark -->
+        <div class="watermark">SONNY SAYI SOLUTIONS</div>
+
+        <div class="content-wrapper">
+            <header class="invoice-header">
+                <div class="brand">
+                    <h1>Sonny Sayi Solutions</h1>
+                    <p class="tagline">Technology & Creative Solutions Architect</p>
+                </div>
+                <div class="invoice-title">
+                    <h2>INVOICE</h2>
+                    <div class="invoice-meta">
+                        <p><span class="meta-label">No.</span> <span class="meta-value">INV-2026-001</span></p>
+                        <p><span class="meta-label">Date</span> <span class="meta-value">August 09, 2026</span></p>
+                        <p><span class="meta-label">Due</span> <span class="meta-value">August 29, 2026</span></p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="bill-to">
+                <h3>Prepared For</h3>
+                <p class="client-name">Eye on Property</p>
+                <p class="client-address">Nairobi, Kenya</p>
+            </section>
+
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th class="col-desc">Description</th>
+                        <th class="col-qty">Qty</th>
+                        <th class="col-price">Unit Price</th>
+                        <th class="col-total">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-desc">
+                            <strong>Domain and Hosting Renewal</strong>
+                            <span class="item-detail">Annual renewal of web domain and premium hosting services.</span>
+                        </td>
+                        <td class="col-qty">1</td>
+                        <td class="col-price">3,000.00</td>
+                        <td class="col-total">3,000.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Subtotal</td>
+                        <td class="col-total">3,000.00</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3" class="text-right">Total Due</td>
+                        <td class="col-total">KES 3,000.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <section class="payment-details">
+                <h3>Remittance Details</h3>
+                <p>Kindly process payment via M-Pesa to either of the following accounts:</p>
+                <div class="payment-grid">
+                    <div class="payment-item">
+                        <span class="network">Safaricom</span>
+                        <span class="number">0723 293 901</span>
+                    </div>
+                    <div class="payment-item">
+                        <span class="network">Airtel</span>
+                        <span class="number">0736 194 051</span>
+                    </div>
+                </div>
+                <p class="note">Please reference Invoice No. INV-2026-001 in the payment description.</p>
+            </section>
+
+            <footer class="invoice-footer">
+                <p>Sonny Sayi Solutions &bull; info@sonnysayisolutions.co.ke &bull; +254 723 293 901</p>
+                <p class="thank-you">Thank you for your continued partnership.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
